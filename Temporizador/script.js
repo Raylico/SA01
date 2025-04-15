@@ -7,8 +7,11 @@ elevadorMusic.loop = true; // Toca sem parar enquanto o tempo roda
 
 function startTimer() {
   clearInterval(timer);
-  const minutes = parseInt(document.getElementById("minutes").value);
-  totalTime = minutes * 60;
+
+  const minutes = parseInt(document.getElementById("minutes").value) || 0;
+  const seconds = parseInt(document.getElementById("seconds").value) || 0;
+
+  totalTime = minutes * 60 + seconds;
 
   updateDisplay();
 
@@ -40,6 +43,7 @@ function resetTimer() {
   clearInterval(timer);
   document.getElementById("time").textContent = "00:00";
   document.getElementById("minutes").value = "";
+  document.getElementById("seconds").value = ""; // limpa os segundos também
   elevadorMusic.pause(); // Garante que a música também pare
   elevadorMusic.currentTime = 0;
 }
