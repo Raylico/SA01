@@ -11,12 +11,15 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #f4d1d9;
+  background: linear-gradient(270deg, #f4d1d9, #f692a8, #77d1b3, #93e8cc);
+  background-size: 800% 800%;
+  animation: gradientAnimation 10s ease infinite;
 }
 .wrapper {
   padding: 35px 40px;
   border-radius: 20px;
   background: #f692a8;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.644);
 }
 .wrapper header {
   display: flex;
@@ -87,7 +90,7 @@ header input {
   background: linear-gradient(#77d1b3, #6ab69c);
 }
 .piano-keys .black.active {
-  box-shadow: inset -5px -10px 10px rgba(255,255,255,0.1);
+  box-shadow: inset -5px -10px 10px rgba(168, 235, 226, 0.1);
   background:linear-gradient(to bottom, #93e8cc, #95ecce);
 }
 .piano-keys .white {
@@ -157,5 +160,17 @@ header input {
   }
   .piano-keys .white {
     width: 50px;
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
