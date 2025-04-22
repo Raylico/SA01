@@ -1,5 +1,5 @@
 const pianoKeys = document.querySelectorAll(".piano-keys .key"), // Seleciona todas as teclas do piano
-      volumeSlider = document.querySelector(".volume-slider input"), // Seleciona o controle deslizante de volume
+      volumeSlider = document.querySelector(".volume-slider input"), // Seleciona a barrinha de volume
       keysCheckbox = document.querySelector(".keys-checkbox input"); // Seleciona a caixa de seleção para mostrar/esconder as teclas
 
 let allKeys = [];
