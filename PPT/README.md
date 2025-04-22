@@ -1,0 +1,1 @@
+O ppt (pedra, papel e tesoura) teve alguns probleminhas na parte de Javascript e na parte da estilização. Fora isso, eu consegui executar o projeto com uma certa facilidade, o jogo ficou funcional e com uma fácil compreensão, seguindo a mesma paleta de cor do Piano e do Temporizador 
