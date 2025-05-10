@@ -1,43 +1,42 @@
 <!DOCTYPE html>
-
-<htmllang="en"dir="ltr">  
-  <cabeça>
-    <metacharset="utf-8"> 
-    <título>Piano jogável JavaScript | CodingNepal</título>
-    <linkrel="folha de estilo"href="style.css">  
-    <metanome="vista"conteúdo="width=device-width, initial-scale=1.0">  
-    <scriptsrc="script.js" adiar></script> 
-  </cabeça>
-  <corpo>
-    <divclasse="wrapper"> <!-- "caixa" -->
-      <cabeçalho>
-        <h2>PIANO Jogável</h2>
-        <divclasse="controlador de volume de coluna"> 
-          <extensão>Volume</extensão><entradatipo="alcance"min="0"max="1"valor="0.5"passo="qualquer">     
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Piano SA01</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h2>Pianinho</h2>
+        <div class="column volume-slider">
+          <span>Volume</span><input type="range" min="0" max="1" value="0.5" step="any"> 
         </div>
-        <divclasse="caixa de verificação de teclas de coluna"> 
-          <extensão>Mostrar Chaves</extensão><entradatipo="caixa de verificação" verificado> 
+        <div class="column keys-checkbox">
+          <span>Mostrar Teclas</span><input type="checkbox" checked>
         </div>
-      </cabeçalho>
-      <ulclasse="teclas de piano"> 
-        <liclasse="chave branca"chave de dados="a"><extensão>a</extensão></li>  
-        <liclasse="chave preta"chave de dados="w"><extensão>s</extensão></li>  
-        <liclasse="chave branca"chave de dados="s"><extensão>d</extensão></li>  
-        <liclasse="chave preta"chave de dados="e"><extensão>f</extensão></li>  
-        <liclasse="chave branca"chave de dados="d"><extensão>g</extensão></li>  
-        <liclasse="chave branca"chave de dados="f"><extensão>h</extensão></li>  
-        <liclasse="chave preta"chave de dados="t"><extensão>j</extensão></li>  
-        <liclasse="chave branca"chave de dados="g"><extensão>k</extensão></li>  
-        <liclasse="chave preta"chave de dados="y"><extensão>l</extensão></li>  
-        <liclasse="chave branca"chave de dados="h"><extensão>ç</extensão></li>  
-        <liclasse="chave preta"chave de dados="u"><extensão>~</extensão></li>  
-        <liclasse="chave branca"chave de dados="j"><extensão>]</extensão></li>  
-        <liclasse="chave branca"chave de dados="k"><extensão>k</extensão></li>  
-        <liclasse="chave preta"chave de dados="o"><extensão>o</extensão></li>  
-        <liclasse="chave branca"chave de dados="l"><extensão>l</extensão></li>  
-        <liclasse="chave preta"chave de dados="p"><extensão>p</extensão></li>  
-        <liclasse="chave branca"chave de dados=";"><extensão>;</extensão></li>  
+      </header>
+      <ul class="piano-keys">
+        <li class="key white" data-key="a"><span>a</span></li>
+        <li class="key black" data-key="w"><span>w</span></li>
+        <li class="key white" data-key="s"><span>s</span></li>
+        <li class="key black" data-key="e"><span>e</span></li>
+        <li class="key white" data-key="d"><span>d</span></li>
+        <li class="key white" data-key="f"><span>f</span></li>
+        <li class="key black" data-key="t"><span>t</span></li>
+        <li class="key white" data-key="g"><span>g</span></li>
+        <li class="key black" data-key="y"><span>y</span></li>
+        <li class="key white" data-key="h"><span>h</span></li>
+        <li class="key black" data-key="u"><span>u</span></li>
+        <li class="key white" data-key="j"><span>j</span></li>
+        <li class="key white" data-key="k"><span>k</span></li>
+        <li class="key black" data-key="o"><span>o</span></li>
+        <li class="key white" data-key="l"><span>l</span></li>
+        <li class="key black" data-key="p"><span>p</span></li>
+        <li class="key white" data-key="z"><span>z</span></li>
       </ul>
     </div>
-  </corpo>
+  </body>
 </html>

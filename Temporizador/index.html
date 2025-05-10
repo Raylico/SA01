@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Temporizador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="timer-container">
+    <h1>⏳ Temporizador</h1>
+    <div class="time-display" id="time">00:00</div>
+    <br>
+
+    <!-- Agrupando os campos de tempo -->
+    <div style="display: flex; gap: 10px; justify-content: center;">
+      <input type="number" id="minutes" placeholder="Minutos" min="0">
+      <input type="number" id="seconds" placeholder="Segundos" min="0" max="59">
+    </div>
+
+    <br>
+    <button onclick="startTimer()">Iniciar</button>
+    <button onclick="resetTimer()">Resetar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
